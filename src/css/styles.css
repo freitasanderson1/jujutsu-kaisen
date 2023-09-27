@@ -1,0 +1,72 @@
+html{
+    overflow-y: hidden;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+    background-color: #101215;
+    margin: 0;
+    display: flex;
+    justify-content: inline;
+}
+
+.imagem{
+    height: auto;
+}
+
+.conteudo{
+    position: absolute;
+    background-color: #000000ac;
+    border-radius: 16px;
+    top:40%;
+    left: 5%;
+    max-width: 35rem;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.nome-personagem{
+    color: #FFEEFF;
+    padding-inline: 1rem;
+}
+.descricao{
+    color: #FFEEFF;
+    padding-inline: 1rem;
+
+}
+.logo{
+    position: absolute;
+    top:25%;
+    left: 5%;
+    width: 25rem;
+}
+
+ul{
+    position: absolute;
+    padding: 0;
+    top: 10%;
+    right: 1%;
+    background-color: #000000b0;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ol{
+    padding: 1rem;
+    padding-bottom: 1rem;
+}
+
+.option-menu{
+    border-radius: 100%;
+}
+
+.option-selected{
+    border: solid 1px #ffffff;
+}
+
+.display-none{
+    display: none;
+}
