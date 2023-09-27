@@ -8,11 +8,12 @@ body{
     margin: 0;
     display: flex;
     justify-content: inline;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .imagem{
     height: auto;
+    width: 100vw;
 }
 
 .conteudo{
