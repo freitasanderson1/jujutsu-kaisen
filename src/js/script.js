@@ -23,6 +23,8 @@ $('#option-sukuna').on('click',function(event){
     addClasses('sukuna')
 });
 
+let listaPersonagem = ['gojo','kento','megumi','nobara','sukuna']
+
 function removeAll(){
     // console.log('removendo')
     $('#gojo').addClass('display-none')
