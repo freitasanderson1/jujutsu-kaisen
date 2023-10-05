@@ -13,6 +13,8 @@ body{
 
 .imagem{
     height: auto;
+    animation: imagem 3s;
+
 }
 
 .conteudo{
@@ -41,6 +43,8 @@ body{
     top:25%;
     left: 5%;
     width: 25rem;
+    animation: go-back 1s;
+
 }
 
 ul{
@@ -71,3 +75,25 @@ ol{
 .display-none{
     display: none;
 }
+
+@keyframes imagem {
+    from {
+        width: 120vw;
+        transform: translateX(-200px);
+
+    }
+
+    to {
+        width: 100vw;
+        transform: translateX(0);
+    }
+}
+
+@keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } 
