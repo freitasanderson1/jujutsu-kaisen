@@ -1,45 +1,16 @@
-$('#option-gojo').on('click',function(event){
-    removeAll()
-    addClasses('gojo')
-});
+const lista = ['gojo','kento','megumi','nobara','sukuna']
 
-$('#option-kento').on('click',function(event){
+$('.option').on('click',function(event){
+    var nome = $(this).data('value');
     removeAll()
-    addClasses('kento')
-});
-
-$('#option-megumi').on('click',function(event){
-    removeAll()
-    addClasses('megumi')
-});
-
-$('#option-nobara').on('click',function(event){
-    removeAll()
-    addClasses('nobara')
-});
-
-$('#option-sukuna').on('click',function(event){
-    removeAll()
-    addClasses('sukuna')
+    addClasses(nome)
 });
 
 function removeAll(){
-    // console.log('removendo')
-    $('#gojo').addClass('display-none')
-    $('#kento').addClass('display-none')
-    $('#megumi').addClass('display-none')
-    $('#nobara').addClass('display-none')
-    $('#sukuna').addClass('display-none')
-
-    $('#option-menu-gojo').removeClass('option-selected')
-    $('#option-menu-kento').removeClass('option-selected')
-    $('#option-menu-megumi').removeClass('option-selected')
-    $('#option-menu-nobara').removeClass('option-selected')
-    $('#option-menu-sukuna').removeClass('option-selected')
+    lista.forEach((nome) => $(`#${nome}`).addClass('display-none') & $(`#option-menu-${nome}`).removeClass('option-selected'));
 }
 
 function addClasses(nome){
-    // console.log('adicionando')
     $(`#${nome}`).removeClass('display-none')
     $(`#option-menu-${nome}`).addClass('option-selected')
 }
