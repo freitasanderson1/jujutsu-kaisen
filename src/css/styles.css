@@ -67,6 +67,8 @@ ol{
 
 .option-menu{
     border-radius: 100%;
+border: none;
+    transition: border 1s
 }
 
 .option-selected{
