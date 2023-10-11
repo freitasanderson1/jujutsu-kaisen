@@ -67,12 +67,12 @@ ol{
 
 .option-menu{
     border-radius: 100%;
-border: none;
-    transition: border 1s
+    border: none;
+    transition: border 1.5s
 }
 
 .option-selected{
-    border: solid 1px #ffffff;
+    border: solid 1px #ffffff7d;
 }
 
 .display-none{
